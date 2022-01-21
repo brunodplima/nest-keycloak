@@ -1,0 +1,14 @@
+# Login
+POST http://localhost:3000/authentication/login
+Content-Type: application/json
+
+{
+  "username": "bruno",
+  "password": "123456"
+}
+
+###
+
+# Test
+GET http://localhost:3000/user/profile
+Authorization: Bearer <token>
